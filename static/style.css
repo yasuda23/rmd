@@ -1,0 +1,65 @@
+button {
+    background-color: #8b0000; /* 神社をイメージした赤 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b22222; /* 濃い赤で視覚的なフィードバック */
+}
+
+form {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+body {
+    background-image: url('/static/images/shrine-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333; /* 文字を見やすく調整 */
+}
+
+body {
+    background-color: #faf8f2; /* 優しいクリーム色 */
+    color: #333; /* 読みやすい濃いグレー */
+    font-family: Arial, sans-serif;
+}
+h1, h2 {
+    color: #8b0000; /* 神社っぽい赤 */
+}
+.main-container {
+    max-width: 800px;
+    margin: 0 auto; /* 中央に配置 */
+    padding: 20px;
+    background-color: white; /* カードスタイル */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影を付ける */
+}
+
+button {
+    background-color: #008b8b; /* 落ち着いた青緑色 */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #006666; /* ホバー時に少し暗く */
+}
+

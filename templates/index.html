@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行事管理アプリ</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>行事登録アプリ</h1>
+    <div class="message">
+        <h2>「大切な行事を忘れない」</h2>
+        <p>このアプリでお寺や神社の重要な行事を一緒に管理しましょう。</p>
+    </div>
+    <h2>登録済みの行事</h2>
+    <ul>
+        {% for event in events %}
+        <li>{{ event.name }} - {{ event.date }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>行事を登録</h2>
+    <form action="/add" method="POST">
+        <label for="name">行事名:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="date">日付:</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+        <button type="submit">追加</button>
+    </form>
+</body>
+</html>
